@@ -1,5 +1,13 @@
-let input = prompt("Podaj liczbę całkowitą:");
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Operacje</title>
+</head>
+<body>
 
+<script>
+let input = prompt("Podaj liczbę całkowitą:");
 let liczba = parseInt(input);
 
 if (isNaN(liczba) || liczba.toString() !== input.trim()) {
@@ -22,3 +30,7 @@ if (isNaN(liczba) || liczba.toString() !== input.trim()) {
     document.write(liczba * random + "<br>");
     document.write(Math.abs(liczba) + "<br>");
 }
+</script>
+
+</body>
+</html>
