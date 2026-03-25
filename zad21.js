@@ -3,22 +3,22 @@ let input = prompt("Podaj liczbę całkowitą:");
 let liczba = parseInt(input);
 
 if (isNaN(liczba) || liczba.toString() !== input.trim()) {
-    console.log("To nie jest poprawna liczba całkowita");
+    document.write("To nie jest poprawna liczba całkowita");
 } else {
-    console.log(liczba);
-    console.log(-liczba);
-    console.log(liczba + 15);
-    console.log(liczba + 0.5);
-    console.log(liczba * liczba);
-    console.log(liczba / 2);
-    console.log(liczba % 2);
-    console.log(liczba + 1);
-    console.log(liczba - 1);
-    console.log(Math.floor(liczba / 3));
-    console.log(Math.ceil(liczba / 3));
-    console.log(Math.round(liczba / 3));
-    console.log(Math.sqrt(liczba));
+    document.write(liczba + "<br>");
+    document.write(-liczba + "<br>");
+    document.write(liczba + 15 + "<br>");
+    document.write(liczba + 0.5 + "<br>");
+    document.write(liczba * liczba + "<br>");
+    document.write(liczba / 2 + "<br>");
+    document.write(liczba % 2 + "<br>");
+    document.write(liczba + 1 + "<br>");
+    document.write(liczba - 1 + "<br>");
+    document.write(Math.floor(liczba / 3) + "<br>");
+    document.write(Math.ceil(liczba / 3) + "<br>");
+    document.write(Math.round(liczba / 3) + "<br>");
+    document.write(Math.sqrt(liczba) + "<br>");
     let random = Math.random() * 50;
-    console.log(liczba * random);
-    console.log(Math.abs(liczba));
+    document.write(liczba * random + "<br>");
+    document.write(Math.abs(liczba) + "<br>");
 }
